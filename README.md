@@ -1,9 +1,9 @@
 angufilter
 ==========
 
-Blurb
+A responsive multi-selectable filter library designed to make filtering interactive and intuitive
 
-To see a demo go here: ...
+<!-- To see a demo go here: ... -->
 
 ###Key Features
 * Feature 1
@@ -12,15 +12,15 @@ To see a demo go here: ...
 
 
 ### Getting Started
-Download the code, and include the mydirective.js file in your page. Then add the mydirective module to your Angular App file, e.g.
+Download the code, and include the angufilter.js file in your page. Then add the angufilter module to your Angular App file, e.g.
 ```html
-var app = angular.module('app', ["mydirective"]);
+var app = angular.module('app', ["angufilter"]);
 ```
 
 ### Local Usage
 
 ```html
-<mydirective  prop1="val1"
+<angufilter  prop1="val1"
               prop2="val2"/>
 ```
 
@@ -31,3 +31,4 @@ var app = angular.module('app', ["mydirective"]);
 | :------------- |:-------------| :-----:| :-----|
 | prop1 | Description 1 of prop1 | Yes | Example |
 | prop2 | Description 2 of prop2 | No  | Example |
+
