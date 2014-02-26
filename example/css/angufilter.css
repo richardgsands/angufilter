@@ -1,0 +1,82 @@
+/* LAYOUT */
+.angufilter-container {
+
+}
+.angufilter-field {
+  /*
+  display: inline-block;
+  vertical-align: top;
+  */
+}
+
+/* BRAND */
+.angufilter-container {
+  font-size: 12px;
+}
+.angufilter-container .angufilter-field {
+  padding: 5px;
+  margin: 5px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.angufilter-container .angufilter-field-header, .angufilter-container .angufilter-field-value {
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.angufilter-container .angufilter-field-header {
+  position: relative;
+  /* border: 2px solid grey; */
+  color: white;
+  background: black;
+  /* font-weight: bold; */
+  margin-bottom: 5px;
+}
+.angufilter-container .angufilter-field-header div {
+  display: inline-block;
+}
+.angufilter-container .angufilter-field-header .angufilter-remove-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 13px;
+  height: 13px;
+  background: url(/img/icon-close-circled.svg);
+  background-size: 13px 13px;
+  visibility: hidden;
+  opacity: 0.5;
+}
+.angufilter-container .angufilter-field-header.filtered {
+  background: #6893B5;
+}
+.angufilter-container .angufilter-field-header.filtered .angufilter-remove-button {
+  color: #f1d0d4;
+  visibility: visible;
+}
+.angufilter-container .angufilter-field-header.filtered:hover .angufilter-remove-button {
+  opacity: 0.8;
+}
+.angufilter-container .angufilter-field-value {
+  color: black;
+  background: #cccccc;
+  /* border: 2px solid lightskyblue; */
+}
+.angufilter-container .angufilter-field-value:hover {
+  background: rgba(204, 204, 204, 0.5);
+  /* box-shadow: 1px 1px lightskyblue; */
+}
+.angufilter-container .angufilter-field-value.selected {
+  background: #aed7e7;
+}
+.angufilter-container .angufilter-field-value.selected:hover {
+  background: rgba(174, 215, 231, 0.5);
+}
+.angufilter-container .angufilter-field-value.disabled, .angufilter-container .angufilter-field-value.disabled:hover {
+  color: lightgrey;
+}

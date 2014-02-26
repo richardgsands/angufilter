@@ -1,29 +1,50 @@
 <html>
 	<head>
-		<title>Angucomplete</title>
+		<title>Angufilter</title>
         <meta name='viewport' content='width=device-width,initial-scale=1'>
         <link rel="stylesheet" href="css/structure.css"/>
         <link rel="stylesheet" href="fonts/bariol/bariol.css"/>
-        <link rel="stylesheet" href="css/mydirective.css"/>
+        <link rel="stylesheet" href="css/angufilter.css"/>
     </head>
 	<body ng-app="app">
 		<div ng-controller="MainController">
-            <h1>Title</h1>
-            <h2>Sub-title</h2>
+            <h1>Angufilter</h1>
+            <!-- <h2>Sub-title</h2> -->
             <p>
-                Blurb
+                A responsive multi-selectable filter library designed to make filtering interactive and intuitive
             </p>
 
-
-
             <div class="large-padded-row">
-                <h3>Sub-sub-title</h3>
+                <h3>Example</h3>
                 <div class="padded-row">
-                    <!-- Usage example -->
+                    
+                    <div class="filters">
+                        <angufilter datapoints="data" filter-keys="filterKeys" filtered-results="filteredData"></angufilter>
+                    </div>
+
+                    <div class="table">
+
+                        <table>
+
+                            <!-- Table headings -->
+                            <tr>
+                                <th ng-repeat="key in getHeaders(data)">
+                                    {{key}}
+                                </th>
+                            </tr>
+
+                            <tr ng-repeat="datum in filteredData">
+                                <td ng-repeat="key in getHeaders(data)">
+                                    {{datum[key]}}
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
                 </div>
             </div>
-
-
 
             <div class="very-large-padded-row">
                 <h2>How to use</h2>
@@ -38,15 +59,17 @@
             </div>
 
             <div class="very-large-padded-row">
-                <h5>By ...?</h5>
+                <h5>By Richard Sands</h5>
             </div>
+
 
 
             <script src="js/angular.min.js"></script>
             <script src="js/angular-touch.min.js"></script>
             <script src="js/app/app.js"></script>
             <script src="js/app/controllers/main-controller.js"></script>
-            <script src="js/app/directives/mydirective.js"></script>
+            <script src="js/app/directives/angufilter.js"></script>
+            <script src="js/app/data/initial.json"></script>
         </div>
 	</body>
 </html>

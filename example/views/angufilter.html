@@ -1,0 +1,17 @@
+<div class="angufilter-test">
+</div>
+<div class="angufilter-container">
+  <div class="angufilter-field" ng-repeat="filter in filters">
+    <div class="angufilter-field-header" ng-class="{filtered: isFilterApplied(filter)}" ng-click="filterSelectAll(filter)">
+      <div>{{filter.filterKey}}</div>
+      <div class="angufilter-remove-button"></div>
+
+    </div>
+
+    <div class="angufilter-field-values-container">
+      <div class="angufilter-field-value" ng-repeat="option in filter.filterOptions" ng-if="option.matchingDatapointCount>0" ng-class="{selected: option.checked}" ng-click="toggleOptionChecked(filter,option,$index);$event.stopPropagation()">
+        {{option.value}} ({{option.matchingDatapointCount}})
+      </div>
+    </div>
+  </div>
+</div>

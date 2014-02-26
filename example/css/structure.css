@@ -17,6 +17,22 @@ input, button, textarea {
     -webkit-appearance: none;
 }
 
+.filters {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    height: 800px;
+    overflow: scroll;
+}
+.table {
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+    height: 800px;
+    overflow: scroll;
+}
+
+
 .white-bg {
     background: #ffffff;
     min-height: 100%;
@@ -1004,4 +1020,3 @@ th {
 td {
     padding: 5px;
 }
-

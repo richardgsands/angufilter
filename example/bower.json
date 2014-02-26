@@ -1,0 +1,25 @@
+{
+  "name": "angufilter example",
+  "version": "1.0.0",
+  "homepage": "https://github.com/richardgsands/angufilter",
+  "authors": [
+    "Richard Sands <richard.sands@capco.com>"
+  ],
+  "description": "Example page to demostrate angufilter angular library",
+  "main": "index.html",
+  "keywords": [
+    "angufilter",
+    "angular"
+  ],
+  "license": "GPLv3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "datatables": "~1.9.4"
+  }
+}
